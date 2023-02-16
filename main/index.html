@@ -6,9 +6,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <!--Import the Tone library-->
+        <!--Import the Tone library -->
         <script src="https://unpkg.com/tone"></script>
-        <!--My Javascript file -->
+        <!--Import Axios library -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!--My Javascript files -->
+        <script type="text/javascript" src="tune.backend.js"></script>
         <script type="text/javascript" src="piano.functionality.js"></script>
     </head>
 
@@ -42,7 +45,7 @@
                     <span>C4</span>
                     <span>(a)</span>
                 </button>
-                <button id="c#4" class="blackbtn">
+                <button onclick="PlayTune('C#4')" id="c#4" class="blackbtn">
                     <span>C</span>
                     <span>(w)</span>
                 </button>
@@ -50,7 +53,7 @@
                     <span>D4</span>
                     <span>(s)</span>
                 </button>
-                <button id="d#4" class="blackbtn">
+                <button onclick="PlayTune('D#4')" id="d#4" class="blackbtn">
                     <span>D#4</span>
                     <span>(e)</span>
                 </button>
@@ -62,7 +65,7 @@
                     <span>F4</span>
                     <span>(f)</span>
                 </button>
-                <button id="f#4" class="blackbtn">
+                <button onclick="PlayTune('F#4')" id="f#4" class="blackbtn">
                     <span>F#4</span>
                     <span>(t)</span>
                 </button>
@@ -70,7 +73,7 @@
                     <span>G4</span>
                     <span>(g)</span>
                 </button>
-                <button id="g#4" class="blackbtn">
+                <button onclick="PlayTune('G#4')" id="g#4" class="blackbtn">
                     <span>G#4</span>
                     <span>(y)</span>
                 </button>
@@ -78,7 +81,7 @@
                     <span>A4</span>
                     <span>(h)</span>
                 </button>
-                <button id="bb4" class="blackbtn">
+                <button onclick="PlayTune('Bb4')" id="bb4" class="blackbtn">
                     <span>Bb4</span>
                     <span>(u)</span>
                 </button>
@@ -90,7 +93,7 @@
                     <span>C5</span>
                     <span>(k)</span>
                 </button>
-                <button id="c#5" class="blackbtn">
+                <button onclick="PlayTune('C#5')" id="c#5" class="blackbtn">
                     <span>C#5</span>
                     <span>(o)</span>
                 </button>
@@ -98,7 +101,7 @@
                     <span>D5</span>
                     <span>(l)</span>
                 </button>
-                <button id="d#5" class="blackbtn">
+                <button onclick="PlayTune('D#5')" id="d#5" class="blackbtn">
                     <span>D#5</span>
                     <span>(p)</span>
                 </button>

@@ -16,7 +16,7 @@ const PlayTune = (tune_type) => {
 //Function is invoked upon the window finishing it's loading.
 window.onload = function() {
     //This is adds an event listener to our whole document, capturing the keypresses
-    document.addEventListener('keydown', (event) => {
+    document.addEventListener('keyup', (event) => {
             const key_name = event.key.toLowerCase();
             //console.log('Key pressed is ' + key_name); //Debugging purposes
             
@@ -31,7 +31,14 @@ window.onload = function() {
                 'j': 'B4',
                 'k': 'C5',
                 'l': 'D5',
-                '.': 'E5'
+                '.': 'E5',
+                'w': 'C#4',
+                'e': 'D#4',
+                't': 'F#4',
+                'y': 'G#4',
+                'u': 'Bb4',
+                'o': 'C#5',
+                'p': 'D#5'
             }
             
             //If the key is in the key_converter object, return bool -> true / false
@@ -44,3 +51,4 @@ window.onload = function() {
             }
         });
 }
+
